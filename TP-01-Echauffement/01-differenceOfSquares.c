@@ -27,4 +27,5 @@ int main (void){
     uint16_t number= 10;
     printf("Difference between squareOfSum of first %"PRIu16, number);
     printf(" natural numbers and its sumOfSquares : %"PRIu16"\n", difference(number));
+    return 0;
 }
