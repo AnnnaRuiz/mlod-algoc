@@ -29,3 +29,5 @@ unsigned int nbreJours(Mois mois, unsigned int annee);
 bool dateValide(Date uneDate);
 
 unsigned int jourDansAnnee(Date uneDate);
+
+char* libelleMois (Mois mois);

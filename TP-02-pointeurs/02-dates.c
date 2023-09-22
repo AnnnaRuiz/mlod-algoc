@@ -8,9 +8,16 @@ void initialiseDate( Date *d){
     printf(" annee :");
     scanf("%d",&d->annee);
 }
+char* libelleMois (Mois mois){
+    char* nomsMois [] = {
+        "Janvier" , "Fevrier", "Mars", "Avril", "Mai","Juin","Juillet","Aout",
+        "Septembre", "Octobre", "Novembre", "Decembre"};
+        return nomsMois[mois-1];
+
+}
 
 void afficheDate( Date *d){
-    printf("La date est : %d/%d/%d \n", d->jour, d->mois,d->annee);
+    printf("La date est le : %d %s %d \n", d->jour,libelleMois(d->mois),d->annee);
 }
 
 Date creerDateParCopie(void){ //ne devrait pas être utilisée car dès qu'on crée une nouvelle date on occupe un nouvel espace de la mémoire => surcout en mémoire
