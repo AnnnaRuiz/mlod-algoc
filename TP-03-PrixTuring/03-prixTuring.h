@@ -17,7 +17,13 @@ int numberOfWinners (FILE *f);
 
 void readWinner(TuringWinner* winner, FILE *f);
 
-TuringWinner* readWinners(int numberOfTuringWInner, FILE* f);
+void detruire(TuringWinner* winner);
 
-void printWinners(TuringWinner* s);
+TuringWinner* readWinners(FILE* f, int numberOfTuringWInner, TuringWinner* winners);
+
+void printWinners(TuringWinner* winners, int numberOfWinners, FILE* outFile);
+
+void infosAnnee(unsigned int year, TuringWinner *winners, int numberOfWinners);
+
+void sortTuringWinnersByYear(TuringWinner *winners, int n);
 
