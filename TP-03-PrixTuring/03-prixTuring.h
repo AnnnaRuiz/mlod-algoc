@@ -19,7 +19,7 @@ void readWinner(TuringWinner* winner, FILE *f);
 
 void detruire(TuringWinner* winner);
 
-TuringWinner* readWinners(FILE* f, int numberOfTuringWInner, TuringWinner* winners);
+TuringWinner* readWinners(FILE* f);
 
 void printWinners(TuringWinner* winners, int numberOfWinners, FILE* outFile);
 

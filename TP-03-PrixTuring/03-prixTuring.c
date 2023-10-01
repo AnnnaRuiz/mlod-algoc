@@ -39,13 +39,13 @@ void readWinner(TuringWinner* winners, FILE *f){
     winners->description=readStringFromFileUntil(f,'\n');
 }
 
-TuringWinner* readWinners(FILE* file, int numberOfWinners, TuringWinner* winners) {;
+TuringWinner* readWinners(FILE* file) {;
     int i;
-
-    for (i = 0; i < numberOfWinners; i++) {
+    int n= numberOfWinners(file);
+    TuringWinner* winners=(TuringWinner*)malloc(n * sizeof(TuringWinner));
+    for (i = 0; i < n; i++) {
         readWinner(&winners[i], file);
     }
-
     return winners;
 }
 void printWinners(TuringWinner* winners, int numberOfWinners, FILE* outFile) {

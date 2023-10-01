@@ -20,9 +20,7 @@ int main(int argc, char **argv) {
     }
 
     int n = numberOfWinners(inFile);
-    TuringWinner* winners = (TuringWinner*)malloc(n * sizeof(TuringWinner));
-
-    readWinners(inFile,n, winners);
+    TuringWinner* winners = readWinners(inFile);
     fclose(inFile);
 
 	// Recopier les données de la structure de données dans le fichier de sortie
