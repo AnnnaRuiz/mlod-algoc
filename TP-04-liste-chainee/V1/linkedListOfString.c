@@ -7,7 +7,7 @@ void afficheElement(Element e){
     printf("%s ",(char*)e);
 }
 
-void detruireElement(Element e){}
+void detruireElement(Element e){} //pas de malloc donc rien à free
 
 bool equalsElement(Element e1, Element e2){
 	return strcmp((char*)e1,e2)==0;
