@@ -21,7 +21,6 @@ int main(void){
 	l = ajoutTete(4,l);
 	l = ajoutTete(1,l);
 
-	//detruire_i(l);
 	afficheListe_i(l);
 	
 	ajoutFin_i(99,l);
