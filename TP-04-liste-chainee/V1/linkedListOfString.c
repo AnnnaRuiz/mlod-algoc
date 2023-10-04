@@ -7,9 +7,7 @@ void afficheElement(Element e){
     printf("%s ",(char*)e);
 }
 
-void detruireElement(Element e){
-	e = NULL;
-}
+void detruireElement(Element e){}
 
 bool equalsElement(Element e1, Element e2){
 	return strcmp((char*)e1,e2)==0;
