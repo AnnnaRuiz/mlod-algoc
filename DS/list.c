@@ -59,7 +59,7 @@ void list_addlast(List *list, data_t item_data) {
 
 // removes the item from *end* of the list and returns its value
 
-data_t list_rmlast(List *list) { // A corriger
+data_t list_rmlast(List *list) { // A corriger, ne fonctionne pas d'après les tests
     data_t val;
 
     if(estVideList(list)){
