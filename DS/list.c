@@ -69,16 +69,20 @@ data_t list_rmlast(List *list) { // A corriger
     ListNode* precedent = list->first;
     ListNode* courant = list->first;
     
-    else {
+    if(!estVideList(list)){
         while(courant->next!=NULL){
             precedent = courant;
             courant = courant->next;    
         }
         val=courant->data;
+        courant->prev=NULL;
         list->last = precedent;
+
         free(courant);
+
         return val;
     }
+
     return -1;
 }
 
